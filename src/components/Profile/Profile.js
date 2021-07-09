@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import './Profile.css';
 
 
-const Profile = ({avatar, name, tag, location, stats}) => {
+const Profile = ({ avatar, name, tag, location, stats }) => {
   return (
   <div className="profile">
   <div className="description">
@@ -32,5 +34,18 @@ const Profile = ({avatar, name, tag, location, stats}) => {
 </div>
   );
 };
+
+Profile.defaultProps = {
+  avatar: "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
+  location: "unknown",
+}
+
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.object.isRequired,
+}
 
 export default Profile;

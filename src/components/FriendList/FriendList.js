@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
-import friends from '../../friends.json'
+import friends from '../../friends.json';
+import './FriendList.css';
 
 
 const FriendList = () => {
@@ -19,5 +21,14 @@ const FriendList = () => {
   </ul>
   );
 };
+
+
+
+FriendList.propTypes = {
+  name: PropTypes.string,
+  isOnline: PropTypes.string,
+  avatar: PropTypes.string,
+  id: PropTypes.number,
+}
 
 export default FriendList;

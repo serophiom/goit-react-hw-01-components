@@ -7,10 +7,11 @@ import user from './user.json';
 import statisticalData from './statistical-data.json';
 import friends from './friends.json';
 import transactions from './transactions.json';
+import './styles.css'
 
 const App = () => {
     return (
-    <div>
+    <div className="container">
         <Profile
         name={user.name}
         tag={user.tag}
@@ -19,7 +20,7 @@ const App = () => {
         stats={user.stats}
         />
 
-        <Statistics title="Upload stats" stats={statisticalData} />;
+        <Statistics stats={statisticalData} />;
 
         <FriendList friends={friends} />
         
@@ -27,6 +28,8 @@ const App = () => {
     </div>
     );
 };
+
+
 
 export default App;
 

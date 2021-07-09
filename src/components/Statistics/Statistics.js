@@ -1,5 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import statisticalData from '../../statistical-data.json';
+import './Statistics.css';
 
 const Statistics = () => {
     return (
@@ -18,17 +20,11 @@ const Statistics = () => {
       </section>
     );
   };
+
+  Statistics.propTypes = {
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+  }
   
   export default Statistics;
-
-  <ul> 
-            {statisticalData.map((statistic) => (
-                <li>
-                    <Statistics 
-                    label={statistic.label}
-                    percentage={statistic.percentage}
-                    />
-                </li>
-            ))   
-            }
-        </ul>
