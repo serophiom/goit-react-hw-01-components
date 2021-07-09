@@ -38,7 +38,7 @@ const Profile = ({ avatar, name, tag, location, stats }) => {
 Profile.defaultProps = {
   avatar: "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
   location: "unknown",
-}
+};
 
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
@@ -46,6 +46,6 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   location: PropTypes.string,
   stats: PropTypes.object.isRequired,
-}
+};
 
 export default Profile;

@@ -21,10 +21,10 @@ const Statistics = () => {
     );
   };
 
-  Statistics.propTypes = {
+  statisticalData.propTypes = {
     label: PropTypes.string.isRequired,
-    percentage: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
     id: PropTypes.string.isRequired,
-  }
+  };
   
   export default Statistics;

@@ -17,12 +17,12 @@ const FriendListItem = ({ name, isOnline, avatar }) => {
 
 FriendListItem.defaultProps = {
     avatar: "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
-}
+};
 
 FriendListItem.propTypes = {
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
     avatar: PropTypes.string,
-  }
+  };
 
 export default FriendListItem;

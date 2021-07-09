@@ -26,12 +26,12 @@ const TransactionHistory = () => {
   </tbody>
 </table>
     )
-}
+};
 
-TransactionHistory.propTypes = {
+transactions.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.number.isRequired,
   currency: PropTypes.string.isRequired,
-}
+};
 
 export default TransactionHistory;
