@@ -19,7 +19,7 @@
     width: 50px;
 }
 
-.status-true {
+.online {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: auto;
@@ -30,7 +30,7 @@
     border-radius: 50%;
 }
 
-.status-false {
+.offline {
     margin-left: 5px;
     margin-right: 5px;
     margin-top: auto;
