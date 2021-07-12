@@ -1,5 +1,5 @@
 .friend-list {
-    display: flex;
+    /* display: flex; */
 
     margin-left: auto;
     margin-right: auto;
@@ -9,8 +9,9 @@
 }
 
 .friend-list .item {
+    margin-bottom: 10px;
     padding-right: 5px;
-    width: 400px;
+    width: 250px;
     display: flex;
 }
 
